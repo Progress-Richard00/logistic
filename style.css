@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    line-height: 1.6;
+}
+
+/* nav bar */
+.navbar{display: flex;
+    justify-content: space-between;
+    background: #003366;
+    color: white;
+    /* flex-wrap: wrap; */
+}
+
+.logo{
+    font-size: 20px;
+    padding: 5px;
+}
+
+.nav-links{
+    padding: 10px 10px;
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li{
+    margin-left: 15px;
+}
+
+.nav-links a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/* hero section */
+.hero{
+    height: 85vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5)), url('https://wallpaperaccess.com/full/3870336.jpg');
+     background-repeat: no-repeat;
+     /* background-position: ; */
+     background-size: cover;
+    color: white;
+    padding: 80px 20px;
+}
+
+.hero h2{
+    font-size: 28px;
+}
+
+.hero .btn{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* bottom section */
+.services{
+    padding: 70px;
+    text-align: center;
+}
+
+.service-box{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+    
+}
+
+img{
+    float: right;
+    height: 73vh;
+    border-radius: 10px;
+    
+}
+
+.card{
+    width: 450px;
+    /* margin-left: 300px; */
+    /* flex: 0px; */
+    padding: 30px;
+    background: #443b3b5c;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* tracking */
+.tracking{
+    background: #054382;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.tracking input{
+    padding: 10px;
+    width: 350px;
+    max-width: 80%;
+   margin-bottom: 10px;
+}
+
+.tracking button{
+    padding: 10px 20px;
+    background: #ff6600;
+    border-radius: none;
+    color: white;
+    cursor: pointer;
+    width: 150px;
+}
+
+/* footer */
+footer{
+    text-align: center;
+    padding: 15px;
+    background: #212020;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-links li{
+        margin-top: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .services-box{
+        /* flex-direction: column; */
+
+    }
+
+    .card {
+        width: 100%;
+    }
+}
