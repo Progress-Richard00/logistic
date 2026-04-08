@@ -10,16 +10,29 @@ body{
 }
 
 /* nav bar */
-.navbar{display: flex;
+.navbar{
+    /* padding: 5px, 20px; */
+    display: flex;
     justify-content: space-between;
     background: #003366;
     color: white;
     /* flex-wrap: wrap; */
 }
 
+/* .logo{
+    max-width: 50%;
+    height: 8vh;
+    background: rgb(223, 220, 245); */
+  
+    /* .log-svg{
+        height: 40px;
+       padding: 5px, 15px;
+    
+    } */
+
 .logo{
     font-size: 20px;
-    padding: 5px;
+    padding: 10px;
 }
 
 .nav-links{
@@ -50,8 +63,10 @@ body{
 }
 
 .hero h2{
+    margin-top: 180px;
     font-size: 28px;
 }
+
 
 .hero .btn{
     display: inline-block;
@@ -69,12 +84,18 @@ body{
     text-align: center;
 }
 
+.our{
+    font-size: 35px;
+    color: #003366;
+    margin-bottom: 10px;
+}
 .service-box{
+    color: #003366;
     display: flex;
     justify-content: center;
     gap: 50px;
-    margin-top: 20px;
-    
+    margin-top: 5px;
+    padding: 10px,20px;
 }
 
 img{
@@ -96,12 +117,14 @@ img{
 
 /* tracking */
 .tracking{
-    background: #054382;
+    background: #0c253e;
     color: white;
     text-align: center;
     padding: 40px 20px;
 }
-
+.tracking h4{
+    font-size: 25px;
+}
 .tracking input{
     padding: 10px;
     width: 350px;
@@ -113,7 +136,7 @@ img{
     padding: 10px 20px;
     background: #ff6600;
     border-radius: none;
-    color: white;
+    color: whitesmoke;
     cursor: pointer;
     width: 150px;
 }
@@ -122,12 +145,22 @@ img{
 footer{
     text-align: center;
     padding: 15px;
-    background: #212020;
-    color: white;
+    background: #003366;
+    color: rgba(245, 245, 245, 0.892);
+}
+
+footer a{
+    cursor: auto;
+}
+footer svg{
+    margin: 10px;
+    transition: 0.3s;
+    transform: scale(1.2);
+    width: 15px;
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 410px) {
     .nav-links{
         flex-direction: column;
         width: 100%;
